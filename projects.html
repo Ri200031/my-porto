@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+    <head>
+        <title>
+
+        </title>
+        <link rel="stylesheet" type="text/css" href="./styles/style1.css">
+        <script type="text/javascript" src="./scripts/project-script.js"></script>
+    </head>
+    <body>
+        <div class="outer">
+            <div class="inner-left">
+                <div class="nav-bar">
+                    <button class="nav-bar-btn" onclick="window.location.href='./index.html'">Home</button>
+                    <button class="nav-bar-btn" onclick="window.location.href='./about.html'">About</button>
+                    <button class="nav-bar-btn" onclick="window.location.href='https://mroberoi.blogspot.com/'">Blog</button>
+		            <button class="nav-bar-btn" onclick="window.location.href='./projects.html'">Projects</button>
+		            <button class="nav-bar-btn" onclick="window.location.href='./contact.html'">Contact Me</button>
+                </div>
+                <div class="project-topic">
+                    <button class="project-topic-btn" onclick="listProjects('0')" id='Web Development'>Web Development</button>
+                </div>
+                <div class="project-topic">
+                    <button class="project-topic-btn" onclick="listProjects('1')" id='Database Management' >Database Management</button>
+                </div>
+                <div class="project-topic">
+                    <button class="project-topic-btn" onclick="listProjects('2')" id= 'Data Analytics and Machine Learning'>Data Analytics and Machine Learning</button>
+                </div>
+                <div class="project-topic">
+                    <button class="project-topic-btn" onclick="listProjects('3')" id='Automation and Electronics'>Automation and Electronics</button>
+                </div>
+                <h3 id="project-cat-text"></h3>
+                <div class="project-category">
+                    <div class="project-name">
+                        <button class="project-name-btn" onclick="projectDisplay(113001)">Inspire the world</button>
+                        <button class="project-name-btn" onclick="projectDisplay(113002)">Travelista: A Travel booking website</button>
+                        <button class="project-name-btn" onclick="projectDisplay(113003)">NetFlux: The Movie Recommender System</button>
+                    </div>
+                    <div class="project-name">
+                        <button class="project-name-btn" onclick="projectDisplay(101)">Audio Video Studio</button>
+                        <button class="project-name-btn" onclick="projectDisplay(102)">PowerChord: Music Store</button>
+                    </div>
+                    <div class="project-name">
+                        <button class="project-name-btn" onclick="projectDisplay(201)">SmartDate: Dating Recommender System</button>
+                        <button class="project-name-btn" onclick="projectDisplay(202)">EY Tax Guide Recommendation System</button>
+                        <button class="project-name-btn" onclick="projectDisplay(203)">Lip Motion feature to text conversion</button>
+                        <button class="project-name-btn" onclick="projectDisplay(204)">Breast Cancer Classification</button>
+                        <button class="project-name-btn" onclick="projectDisplay(205)">Web Traffic Time Series Forecasting</button>
+                    </div>
+                    <div class="project-name">
+                        <button class="project-name-btn" onclick="projectDisplay(301)">Home Automation</button>
+                        <button class="project-name-btn" onclick="projectDisplay(302)">Soccer Truck</button>
+                    </div>
+                </div>
+            </div>
+            <div class="inner-right">
+                <div class="project-main">
+                    <div class="project-bin" id="201">
+                        <h3>SmartDate: Dating Recommender System</h3>
+                        <img src="images/projects/SmartDate.png" width="50%" maxheight = '50%'>
+                        <h2>A dating recommendation system: Data mining from 50 regions from around the globe using tinder and OkCupid. Recommendations based on scores using knowledge graph. Used Deep Knowledge-Aware Network and Collaborative filtering for knowledge inference and to make recommendations.</h2>
+                        <h2>See Code:<a href="https://github.com/kashishoberoi/SmartDate">Github link</a></h2>
+                    </div>
+                    <div class="project-bin" id="202">
+                        <h3>Tax Guide Query-Response Recommendion System</h3>
+                        <img src="images/projects/EY.jpg" width="50%" maxheight = '50%'>
+                        <h2>This project was a part of the EY Silver Badge AI Challenge. An interactive system for recommendations from TAX GUIDE was developed using BM25+ model. The data was pre-processed and bag of words approach was combined with the knowledge of n-grams and POS tags. A flask-python based website was deployed on the SAP cloud.</h2>
+                        <h2>See Documentation:<a href="https://drive.google.com/open?id=1zT1Rj8ylVvy8yTzbNbN6Zo_YtH2ADjn_">Project Report</a></h2>
+                    </div>
+                    <div class="project-main">
+                        <div class="project-bin" id="203">
+                            <h3>Lip Reading</h3>
+                            <img src="images/projects/lip-reading.jpg">
+                            <h2>This project aims at tracking the lip region based on colour and shape information. This project begins with the videos being shot focused basically to the lip area. The video thus obtained will be segmented to frames which are used for designing and implementing the experimental models. Further, the extracted images will be processed using MATLAB to correlate every lip image to its equivalent syllable. The final output of this system is the text display of the alphabet spoken by the speaker.  The experimental results have been tested on different frames under constraints of illumination condition and head motion.</h2>
+                            <h2>See Code:<a href="https://github.com/kashishoberoi/LIP_READING">Github link</a></h2>
+                            <h2>See Report:<a href="https://docs.google.com/document/d/1xWLPI2FJ_T_W91uYpKypwHdwfv371N8v_MaXST-SvGQ/edit?usp=sharing">Google Docx</a></h2>
+                        </div>
+                    </div>
+                    <div class="project-main">
+                        <div class="project-bin" id="204">
+                            <h3>Breast Cancer Classification</h3>
+                            <img src="images/projects/breast-cancer-classification.png">
+                            <h2>Using Decision Trees and K-means Clustering Machine learning algorithm on Breast Cancer Dataset and classifying testing data as Benign or Malignant tumor (Without using pre-defined model).  </h2>
+                            <h2>See Code:<a href="https://github.com/kashishoberoi/Breast-Cancer-Classification">Github link</a></h2>
+                            <h2>See Report:<a href="https://docs.google.com/document/d/1IfyTAXEigar6rlp3kQxGaSTxGWTfTR8MStY45clFVUo/edit?usp=sharing">Google Docx</a></h2>
+                        </div>
+                    </div>
+                    <div class="project-main">
+                        <div class="project-bin" id="205">
+                            <h3>Web Traffic Forecasting</h3>
+                            <img src="images/projects/web-traffic-time-series.png">
+                            <h2>With the recent advancements in internet technology, there is an urge to effectively forecast web traffic. The forecast will help the web servers to handle web requests efficiently. Here, we are using the Web Traffic Time Series Forecasting dataset by Google to predict future traffic of Wikipedia articles.</h2>
+                            <h2>See Code:<a href="https://github.com/kashishoberoi/WebTrafficTimeSeries">Github link</a></h2>
+                            <h2>See Blog:<a href="https://webtrafficforecasting.blogspot.com/">WTTF Blog</a></h2>
+                        </div>
+                    </div>
+                    <div class="project-main">
+                        <div class="project-bin" id="301">
+                            <h3>Home Automation System</h3>
+                            <img src="images/projects/2.png">
+                            <h2>This project is implemented using Raspberry Pi and the web application using Flask. The Raspberry Pi is connected to several LED’s, which can be switched on and off using buttons on the website. The temperature and humidity DHT11 sensor takes its readings and the values are constantly updated on the website. When the security system is enabled, an Ultrasonic sensor is used to detect any movement, with small distance readings triggering a buzzer.</h2>
+                            <h2>See Code:<a href="https://github.com/kashishoberoi/home_automation">Github link</a></h2>
+                        </div>
+                    </div>
+                    <div class="project-main">
+                        <div class="project-bin" id="101">
+                            <h3>Audio Video Studio</h3>
+                            <img src="images/projects/audio-video-store.png">
+                            <h2>The project entitled “Audio Video Tapes” which keeps the record as a complete system for a music store. It maintains the database for the store, keeps the record of CD’s/DVD’s sale and purchase, demand, and provides information about the collection of the store. This is a comprehensive software suite consisting of integrated modules for various aspects of the music store. This software aims at reducing the workforce, management and widens the scope of the store. It increases the reliability and portability of database storage.</h2>
+                            <h2>See Report:<a href="https://drive.google.com/file/d/15AWBkx-plOn1AiNod4jxFAlbWCW-w6aY/view?usp=sharing">Drive Link</a></h2>
+                        </div>
+                    </div>
+                    <div class="project-main">
+                        <div class="project-bin" id="102">
+                            <h3>Powerchord: The Music Store</h3>
+                            <img src="images/projects/powerchord.png">
+                            <h2>Powerchord: The Music Store, the basic idea behind this project is to make a music store like Spotify that we all come across every day. The aim of this project is the development of a sample centralized relational Music store application. The aim of this project is the development of a sample centralized relational. This application has to store information of users and artists with their playlist and music. In this context the functionality is to update, remove and insert records for the different entities. The database is built for the production team and the management's perspective of a Music store.</h2>
+                            <h2>See Report:<a href="https://drive.google.com/file/d/1KWHiOFQQGhd8hkkisKQpG7irExsWF_v-/view?usp=sharing">Drive Link</a></h2>
+                            <h2>See Code:<a href="https://github.com/kashishoberoi/PowerChord">Github Link</a></h2>
+                        </div>
+                    </div>
+
+                    <div class="project-main">
+                        <div class="project-bin" id="113002">
+                            <h3>Travelista</h3>
+                            <img src="images/projects/travelista.png">
+                            <h2>With this marvelous free responsive travel website template, you can speed up the creation of your agency website. We simply called it, Travelista. Just like the tool goes straight to the point with its name, so it does with its web design. Travelista is ready for all sorts of accommodation businesses, as well as flights, holiday packs and even car rental. You will not find it difficult altering the template to your business due to its simplicity.</h2>
+                            <h2>See website:<a href="https://kashishoberoi.github.io/Travelista/">Travelista</a></h2>
+                        </div>
+                    </div>
+                    <div class="project-main">
+                        <div class="project-bin" id="113001">
+                            <h3>Inspire The World</h3>
+                            <img src="images/projects/inspire-the-world.png">
+                            <h2>With this marvelous free responsive travel website template, you can speed up the creation of your agency website. We simply called it, Travelista. Just like the tool goes straight to the point with its name, so it does with its web design. Travelista is ready for all sorts of accommodation businesses, as well as flights, holiday packs and even car rental. You will not find it difficult altering the template to your business due to its simplicity.</h2>
+                            <h2>See website:<a href="https://kashishoberoi.github.io/Inspire-The-World/">Inspire The World</a></h2>
+                        </div>
+                    </div>
+
+                    <div class="project-main">
+                        <div class="project-bin" id="113003">
+                            <h3>NetFlux: The Movie Recommender System</h3>
+                            <img src="images/projects/netflux.png">
+                            <h2>Movies are the best source of entertainment of this era and specially during the quarantine time. Many of us find it difficult to decide which movie to watch and so we decided to make a recommender system for us to better judge which movie we are more likely to love. In this project we are going to use Machine Learning Algorithms to recommend movies to users based on genres and user ratings. We have used Collaborative Filtering and K means clustering to recommend movies to the users.</h2>
+                            <h2>See code:<a href="https://github.com/kashishoberoi/MovieRecommendationSystem">Github Link</a></h2>
+                            <h2>See code:<a href="https://drive.google.com/file/d/1AKxdbdSpkl_WAyxmIdbP19RYqJzeSf3E/view">Project Presentation</a></h2>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

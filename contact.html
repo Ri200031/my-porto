@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+    <head>
+        <title>
+
+        </title>
+        <link rel="stylesheet" type="text/css" href="./styles/style1.css">
+        <script type="text/javascript" src="./scripts/project-script.js"></script>
+    </head>
+    <body>
+        <div class="outer">
+            <div class="inner-left">
+                <div class="nav-bar">
+                    <button class="nav-bar-btn" onclick="window.location.href='./index.html'">Home</button>
+                    <button class="nav-bar-btn" onclick="window.location.href='./about.html'">About</button>
+                    <button class="nav-bar-btn" onclick="window.location.href='https://mroberoi.blogspot.com/'">Blog</button>
+		            <button class="nav-bar-btn" onclick="window.location.href='./projects.html'">Projects</button>
+		            <button class="nav-bar-btn" onclick="window.location.href='./contact.html'">Contact Me</button>
+				</div>
+				<div class='contact-div'>
+					<form action="https://mailthis.to/kashish_oberoi1" method="POST" class="contact-form">
+						<div class="elem-group">
+						<label for="name">Your Name</label><br />
+						<input type="text" id="name" name="visitor_name" pattern=[A-Z\sa-z]{3,20} required>
+						</div>
+						<div class="elem-group">
+						<label for="email">Your E-mail</label><br />
+						<input type="email" id="email" name="visitor_email"  required>
+						</div>
+						<div class="elem-group">
+						<label for="title">Reason For Contacting</label><br />
+						<input type="text" id="title" name="email_title" required  pattern=[A-Za-z0-9\s]{8,60}>
+						</div>
+						<div class="elem-group">
+						<label for="message">Write your message</label><br />
+						<textarea id="message" rows="4" cols="50" name="visitor_message"  required></textarea>
+						</div>
+						<button type="submit" id="submit-btn">Send Message</button>
+					</form>
+				</div>
+            </div>
+            <div class="inner-right">
+				<!-- <div class="inner-right-main">
+					<div class ="myText2">
+						<h3>MY SOCIAL NETWORK</h3>
+						
+					</div>
+				</div>
+			</div>
+			<footer class="social-networks">
+				<button class="social-btn social-btn-facebook" oncli></button>
+				<button class="social-button social-btn-instagram"></button>
+				<button class="social-button social-btn-twitter"></button>
+				<button class="social-button social-btn-linkedIn"></button>
+				<button class="social-button social-btn-gmail"></button>
+			</footer> -->
+        </div>
+    </body>
+</html>
